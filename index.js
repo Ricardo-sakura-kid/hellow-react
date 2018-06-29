@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Router, Route, hashHistory, IndexRoute} from 'react-router';
+import { Router, Route, browserHistory, IndexRoute} from 'react-router';
 import App from './modules/App';
 //引入About和Repos组件
 import About from './modules/About';
@@ -9,7 +9,7 @@ import Home from './modules/Home';
 
 //增加两个路由
 ReactDOM.render((
-    <Router history={hashHistory}>
+    <Router history={browserHistory}>
         <Route path="/" component={App}>
 
             <IndexRoute component={Home}/>
